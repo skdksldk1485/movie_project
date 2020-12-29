@@ -46,7 +46,8 @@ public class MovieController {
 	     }
 
 	     
-	     String apiURL = "https://openapi.naver.com/v1/search/movie.json?query=" + text;    // json 결과
+	     //String apiURL = "https://openapi.naver.com/v1/search/book.json?query=" + text;    // json 결과
+	     String apiURL = "https://api.themoviedb.org/3/search/movie?api_key=cd966d78c5d6f111808969f4fa31cf71&language=ko&query=" + text;    // json 결과
 	     
 	     Map<String, String> requestHeaders = new HashMap<>();
 	     requestHeaders.put("X-Naver-Client-Id", clientId);
